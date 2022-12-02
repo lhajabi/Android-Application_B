@@ -9,7 +9,7 @@ import com.example.menuoptions.R
 
 class DialogFragmentOne:DialogFragment(R.layout.one_fragment_dialog) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val back: Button = view.findViewById(R.id.button);
+        val back: Button = view.findViewById(R.id.buttonBack);
         val submit: Button = view.findViewById(R.id.submit);
         val server: EditText = view.findViewById(R.id.name);
         back.setOnClickListener {

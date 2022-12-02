@@ -36,7 +36,9 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.item0 -> Toast.makeText(this, "https://eu.battle.net/support/en/", Toast.LENGTH_SHORT).show()
-            R.id.item1 -> Toast.makeText(this, "Account", Toast.LENGTH_SHORT).show()//use to open fragment
+            R.id.item1 -> {
+                var dialog_var = DialogFragmentTwo()
+                dialog_var.show(supportFragmentManager, "Custom Dialog")}//use to open fragment
             R.id.item2 -> Toast.makeText(this, "https://worldofwarcraft.com/en-us/", Toast.LENGTH_SHORT).show()
             R.id.subitem0 -> Toast.makeText(this, "Video", Toast.LENGTH_SHORT).show()
             R.id.subitem1 -> Toast.makeText(this, "Audio", Toast.LENGTH_SHORT).show()

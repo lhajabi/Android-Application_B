@@ -13,8 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:hint="server name"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="134dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/submit"
@@ -25,11 +26,11 @@
         android:text="submit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/buttonBack"
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
