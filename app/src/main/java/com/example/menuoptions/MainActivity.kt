@@ -44,7 +44,11 @@ class MainActivity : AppCompatActivity() {
             R.id.subitem1 -> Toast.makeText(this, "Audio", Toast.LENGTH_SHORT).show()
             R.id.subitem2 -> Toast.makeText(this, "Key Bindings", Toast.LENGTH_SHORT).show()
             R.id.subitem3 -> Toast.makeText(this, "Social", Toast.LENGTH_SHORT).show()
-            R.id.item4 -> Toast.makeText(this, "Well Done Blizzard Entertainment", Toast.LENGTH_SHORT).show()
+            R.id.item4 -> {
+                Toast.makeText(this, "Well Done Blizzard Entertainment", Toast.LENGTH_SHORT).show()
+                var dialog_var = DialogFragmentCredit()
+                dialog_var.show(supportFragmentManager, "Custom Dialog")//use to open fragment
+            }
         }
         return true;
 
